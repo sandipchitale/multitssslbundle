@@ -1,0 +1,26 @@
+spring:
+  main:
+    web-application-type: none
+    banner-mode: off
+  multitsssl:
+    multi-ts-bundle:
+      multi-ts-jks:
+        custom-cacerts:
+          trust-stores:
+            - location: classpath:client.jks
+              password: abcdefg
+              type: JKS
+            - location: "${java.home}/lib/security/cacerts"
+              password: changeit
+              type: JKS
+  ssl:
+    bundle:
+      jks:
+        cacerts:
+          truststore:
+            location: "${java.home}/lib/security/cacerts"
+            password: changeit
+            type: JKS
+logging:
+  level:
+    root: off

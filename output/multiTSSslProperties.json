@@ -1,0 +1,41 @@
+{
+  "multiTsBundle" : {
+    "multiTsJks" : {
+      "custom-cacerts" : {
+        "key" : {
+          "password" : null,
+          "alias" : null
+        },
+        "options" : {
+          "ciphers" : null,
+          "enabledProtocols" : null
+        },
+        "protocol" : "TLS",
+        "reloadOnUpdate" : false,
+        "keystore" : {
+          "type" : null,
+          "provider" : null,
+          "location" : null,
+          "password" : null
+        },
+        "truststore" : {
+          "type" : "JKS",
+          "provider" : null,
+          "location" : "classpath:client.jks",
+          "password" : "abcdefg"
+        },
+        "trustStores" : [ {
+          "type" : "JKS",
+          "provider" : null,
+          "location" : "classpath:client.jks",
+          "password" : "abcdefg"
+        }, {
+          "type" : "JKS",
+          "provider" : null,
+          "location" : "/home/sandipchitale/.sdkman/candidates/java/21.0.1-tem/lib/security/cacerts",
+          "password" : "changeit"
+        } ]
+      }
+    }
+  }
+}
