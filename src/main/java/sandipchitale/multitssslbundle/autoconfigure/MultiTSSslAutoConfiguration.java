@@ -4,20 +4,21 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.ssl.SslBundleRegistrar;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.ssl.SslBundleRegistry;
 import org.springframework.context.annotation.Bean;
-import sandipchitale.multitssslbundle.MultiTSSslProperties;
+import sandipchitale.multitssslbundle.autoconfigure.multitsssl.MultiTSSslProperties;
 
 /**
  * {@link EnableAutoConfiguration Auto-configuration} for SSL.
  *
- * @author Scott Frederick
- * @since 3.1.0
+ * @author Sandip Chitale
  */
 @AutoConfiguration
 @EnableConfigurationProperties(MultiTSSslProperties.class)
+@ConditionalOnClass({ MultiTSSslProperties.class })
 public class MultiTSSslAutoConfiguration {
 
     private final MultiTSSslProperties multiTSSslProperties;

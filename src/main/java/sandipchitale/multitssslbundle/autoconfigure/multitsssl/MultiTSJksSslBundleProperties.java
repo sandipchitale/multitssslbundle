@@ -1,4 +1,4 @@
-package sandipchitale.multitssslbundle;
+package sandipchitale.multitssslbundle.autoconfigure.multitsssl;
 
 import org.springframework.boot.autoconfigure.ssl.JksSslBundleProperties;
 
