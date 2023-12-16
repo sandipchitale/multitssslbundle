@@ -1,9 +1,6 @@
 package sandipchitale.multitssslbundle;
 
-import org.springframework.boot.autoconfigure.ssl.JksSslBundleProperties;
-import org.springframework.boot.autoconfigure.ssl.SslProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

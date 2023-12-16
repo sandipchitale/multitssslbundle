@@ -23,4 +23,4 @@ spring:
             type: JKS
 logging:
   level:
-    root: off
+    root: WARN
